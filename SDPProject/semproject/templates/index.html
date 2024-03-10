@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Falcon trades-HOME {% endblock %}
+{% block homeactive %}active{% endblock %}
+{% block content%}
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          
+          <div class="carousel-item active" style="background: url(../static/assets/img/slide/22.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to Stock Exchange Services</h2>
+                <p class="animate__animated animate__fadeInUp"><b> The buying and selling of shares of publicly traded businesses can be done on stock exchanges, which are financial markets. These exchanges are usually run by private businesses, and their primary function is to make it easier for buyers and sellers to buy and sell securities.</b> A stock exchange's main purpose is to act as a venue for the efficient and open trading of securities. Setting standards and guidelines for listing stocks, creating trading tools like electronic order matching, and giving investors access to real-time price information are all part of this.
+</p>
+
+                <a href="{% url 'about' %}" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item" style="background: url(../static/assets/img/slide/11.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated fanimate__adeInDown">Our Team </h2>
+                <p class="animate__animated animate__fadeInUp"><b>To keep our promise of consistently delivering the best, we have made sure that our team of staff are composed of only trained of the professionals that are ready and able to assist you with all your need-from the preparation phase to the end of the event. Furthermore, to continue to achieve our goals,Rest assured, if you hire us today you won't be disappointed.</b></p>
+                <a href="{% url 'team' %}" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="carousel-item" style="background: url(../static/assets/img/slide/34.png)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Achievements  and  movements</h2>
+                <p class="animate__animated animate__fadeInUp"><b>You can see our Achievements and movements we had captured .You can see more about our past experience in out page of content.You can click and view our gallery page for futher details.</b> </p>
+                <a href="{% url 'gallery' %}" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    
+    <section id="featured" class="featured">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="icon-box">
+              <i class="bi bi-emoji-smile"></i>
+              <h3><a href="{% url 'services' %}">Services</a></h3>
+              <p>It would be wonderful if transformation could happen in a snap, but real change requires input, discussion, and planning.
+
+                Coming from outside your organization, we can provide perspective and an impartial voice, working together on the complicating factors that arise..</p>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-envelope-fill"></i>
+              <h3><a href="{% url 'contact' %}">Contact</a></h3>
+              <p>On its contact page, offers three email addresses to contact the company. The first is for general inquiries, the second is for order inquiries, and the last one is for stock and wholesales inquiries. This gives visitors a specific resource to reach out to depending on the question they may have for the company.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-chat-left-text-fill"></i>
+              <h3><a href="{% url 'faqs' %}">FAQ's</a></h3>
+              <p>On its page, We provides visitors with four ways to contact its support team. There are also FAQ links featured at the top of the page that can help users find information without having to reach out to customer service. This creates an ideal balance where visitors have plenty of self-service resources as well direct options for contacting Ulta customer support.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+
+    
+    
+  </main>
+ 
+  
+ {% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Falcon trades-Team{% endblock %}
+{% block touchactive %}active{% endblock %}
+{% block css %} <link href="{% static 'assets/css/team.css' %}" rel="stylesheet"> {% endblock %}
+{% block content %}
+  <main id="main">
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li>Team</li>
+        </ol>
+        <h2>Team</h2>
+      </div>
+    </section>
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+
+
+
+
+  </main>
+
+
+  {% endblock %}

@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Falcon trades-About {% endblock %}
+{% block aboutactive %}active{% endblock %}
+{% block content%}
+  <main id="main">
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li>About Us</li>
+        </ol>
+        <h2>About Us</h2>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="{% static 'assets/img/about1.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>What Does Falcon Trades Do?</h3>
+            <p class="fst-italic">
+              Falcon Trades is committed to reinventing Trades, expense, and invoice management with tools that simplify everyday processes and create better experiences. We solve big problems, small problems, and problems you didn’t know you had. We turn the difficult into simple, make the unknown known, and put an end to tedious tasks. We are relentless in our pursuit of what’s possible as we continuously develop new ways to automate and integrate processes that use emerging technology. As part of the larger   Falcon family, and through our experience, expertise, and partnerships, our solutions help every business run its very best
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Creative Ideas.</li>
+              <li><i class="bi bi-check-circle"></i> Save Time and Money.</li>
+              <li><i class="bi bi-check-circle"></i> Access to Technology.</li>
+              <li><i class="bi bi-check-circle"></i> Manage Risk.</li>
+              <li><i class="bi bi-check-circle"></i> Professional Tour Management.</li>
+              <li><i class="bi bi-check-circle"></i> Manage Your Budget .</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> Many for Us</p>
+              <a href="{% url 'services' %}">Find out more &raquo;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="242" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> We have done so far</p>
+              <a href="{% url 'gallery' %}">Find out more &raquo;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="965" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong>we give support 24/7  </p>
+              <a href="{% url 'contact' %}">Find out more &raquo;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> our Team who work hard</p>
+              <a href="{% url 'team' %}">Find out more &raquo;</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    
+   
+
+    
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>A testimonial is a statement from a past customer that describes how a product or service helped them. Testimonials are often written by the business based on specific questions they ask satisfied customers. They usually show impact through before-and-after comparisons or provide specific improvement statistics.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="testimonial-item">
+              <img src="{% static 'assets/img/testimonials/man.jpg' %}" class="testimonial-img" alt="">
+              <h3>Abdul</h3>
+              <h4>Ceo &amp; IBM Manager</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                I was impressed with your contributions in yesterday’s event . You participated in your group and you gave a masterful presentation that I’ve come to expect from you. You have such an easy, friendly style. 
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="testimonial-item mt-4 mt-lg-0">
+              <img src="{% static 'assets/img/testimonials/female1.jpg' %}" class="testimonial-img" alt="">
+              <h3>Harry</h3>
+              <h4>Cisco CEO</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Your willingness and ability to collaborate of your team done given massive success to event. Thank you for offering up your time to help others do their role better through your performance.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'assets/img/testimonials/female2.jpg' %}" class="testimonial-img" alt="">
+              <h3>Varsha</h3>
+              <h4>KLU Secretary</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                It has been well organized with a perfect rhythm. I really enjoyed the talks from different continents. Thank you very much for your contribution. Thank you very much for organizing this wonderful conference, it was impressive and left me a very good memory.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+       
+
+          <div class="col-lg-6">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'assets/img/testimonials/female3.jpg' %}" class="testimonial-img" alt="">
+              <h3>Rosy</h3>
+              <h4>Govt employee</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                The team couldn’t help but be carried right along. I think you probably gave one of the smoothest, most interesting presentations I have ever heard.Amazing work in a really challenging situation within one week of conducting the event.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  
+  {% endblock %}

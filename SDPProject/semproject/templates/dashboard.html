@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Falcon trades-Dashboard {% endblock %}
+{% block dashactive %}active{% endblock %}
+{% block css %}<link href="{% static 'assets/css/dash.css' %}" rel="stylesheet">{% endblock %}
+
+  {% block content%}
+
+  <main id="main">
+
+   
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li>Dashboard</li>
+        </ol>
+        <h2>Dashboard</h2>
+      </div>
+    </section>
+
+    <section class="h-100 bg-dark" >
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+              <div class="row g-0" style="background-color: black;">
+                
+                    <h3 class="mb-5 text-uppercase" style="text-align: center; color: white;"><br>TRADE WITH US</h3>
+
+
+                    <form action="{% url 'dashboard' %}" method="post">
+                      {% csrf_token %}
+                      <div class="row" >
+                          <div class="col-6" style="padding-left: 100px; padding-right: 95px;">
+                              <label for="p1firstname" class="text-light fw-bold">First Name:</label>
+                              <input type="text" class="form-control mb-3" id="firstname" name="firstname">
+                          </div>
+                          <div class="col-6" style="padding-right: 200px;">
+                              <label for="p1lastname" class="text-light fw-bold">Last Name:</label>
+                              <input type="text" class="form-control mb-3" id="lastname" name="lastname">
+                          </div>
+                      </div>
+                      
+                      <div class="row">
+                          <div class="col-6 mb-3" style="padding-left: 100px; padding-right: 95px;">
+                              <label for="p2firstname" class="text-light fw-bold">E-mail:</label>
+                              <input type="email" class="form-control " id="email" name="email">
+                          </div>
+                          <div class="col-6 mb-3" style="padding-right: 200px;">
+                              <label for="p2lastname" class="text-light fw-bold">Phone No:</label>
+                              <input type="text" class="form-control " id="phone" name="phone">
+                          </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-6 mb-3" style="padding-left: 100px; padding-right: 95px;">
+                          <label for="gender" class="text-light fw-bold">Gender:</label>
+                          <select name="gender" id="gender" class="form-select">
+                            <option selected disabled="true">select gender</option>
+                              <option value="Male">Male</option>
+                              <option value="Female">Female</option>
+                              <option value="Others">Others</option>
+                          </select>
+                        </div>
+                        <div class="col-6 mb-3" style="padding-right: 200px;">
+                            <label for="age" class="text-light fw-bold"> Age:</label>
+                            <input type="text" class="form-control " id="age" name="age">
+                        </div>
+                    </div>             
+                    
+                   
+                       
+                  
+                   
+                    <div class="row">
+                        
+                      <div class="col-6 mb-3" style="padding-left: 100px; padding-right: 95px;">
+                            <label for="area" class="text-light fw-bold">Place:</label>
+                            <input type="text" class="form-control mb-3" id="area" name="area">
+                        </div>
+                        
+                        <div class="col-6 mb-3" style="padding-right: 200px;">
+                          <label for="city" class="text-light fw-bold">City:</label>
+                          <input type="text" class="form-control " id="city" name="city">
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+                      <div class="col-6 mb-3" style="padding-left: 100px; padding-right: 95px;">
+                          <label for="pincode" class="text-light fw-bold">Pincode:</label>
+                          <input type="text" class="form-control mb-3" id="pincode" name="pincode">
+                      </div>
+                      <div class="col-6 mb-3" style="padding-right: 200px;">
+                        <label for="state" class="text-light fw-bold">State:</label>
+                        <input type="text" class="form-control " id="state" name="state">
+                    </div>
+                  </div>
+
+                  <div class="row" style="padding-left: 100px; padding-right: 95px;">
+                        <label for="description" class="text-light fw-bold">Description:</label>
+                        <textarea class="form-control mb-3" id="description" rows="4" cols="50" name="description"></textarea> 
+                </div>
+                      
+                      <div class="row">
+                          <div class="col">
+                            <button type="submit" class="button1">Lets trade</button>
+                          </div>
+                      </div>
+                      <br>
+                    </form>
+           
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  {% endblock %}
